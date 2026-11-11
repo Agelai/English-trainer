@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тренажёр английских слов — Spotlight 2–4</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>📚 Тренажёр английских слов</h1>
+
+  <div class="controls">
+    <select id="themeSelect">
+      <option value="all">Все темы (Spotlight 2–4)</option>
+    </select>
+    <button id="startBtn">Начать</button>
+  </div>
+
+  <div id="quizArea" style="display:none;">
+    <div class="stats">
+      <div>Счёт: <span id="score">0</span></div>
+      <div>Вопрос: <span id="qNum">1</span> / <span id="qTotal">10</span></div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="card">
+      <div class="word" id="wordEl">—</div>
+      <div class="transcription" id="transEl"></div>
+    </div>
+    <div class="message" id="messageEl"></div>
+    <div class="options" id="optionsEl"></div>
+  </div>
+
+  <div id="finishArea" class="finished" style="display:none;">
+    <h2>🎉 Молодец!</h2>
+    <p>Правильных ответов: <b id="finalScore"></b> из <b id="finalTotal"></b></p>
+    <button id="restartBtn">Ещё раз</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

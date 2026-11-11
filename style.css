@@ -1,0 +1,195 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #4a3f8f;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+/* ===== Управление ===== */
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+select, button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+select {
+  flex: 1;
+  min-width: 150px;
+  border: 2px solid #4a3f8f;
+  background: #fff;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+button {
+  background: #4a3f8f;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #667eea;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ===== Карточка со словом ===== */
+.card {
+  background: #f8f9ff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px dashed #8a9bff;
+}
+
+.word {
+  font-size: 42px;
+  font-weight: bold;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.transcription {
+  color: #4a4a6a;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ===== Варианты ответов — контрастные ===== */
+.options {
+  display: grid;
+  gap: 10px;
+}
+
+.option {
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 2px solid #4a3f8f;
+  background: #ffffff;
+  color: #1a1a2e;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.15s;
+  text-align: left;
+}
+
+.option:hover:not(.correct):not(.wrong) {
+  background: #e8ebff;
+  border-color: #667eea;
+  transform: translateX(4px);
+}
+
+.option.correct {
+  background: #2e7d32;
+  border-color: #1b5e20;
+  color: #ffffff;
+}
+
+.option.wrong {
+  background: #c62828;
+  border-color: #8e0000;
+  color: #ffffff;
+}
+
+/* ===== Статистика и прогресс ===== */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #333;
+}
+
+.stats span {
+  font-weight: bold;
+  color: #1a1a2e;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+/* ===== Сообщения ===== */
+.message {
+  text-align: center;
+  font-size: 18px;
+  min-height: 26px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.message.good { color: #1b5e20; }
+.message.bad { color: #b71c1c; }
+
+/* ===== Финал ===== */
+.finished {
+  text-align: center;
+  padding: 20px;
+}
+
+.finished h2 {
+  color: #4a3f8f;
+}
+
+.finished p {
+  color: #1a1a2e;
+  font-size: 17px;
+}

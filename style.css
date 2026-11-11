@@ -167,6 +167,13 @@ button:disabled {
   transition: width 0.3s;
 }
 
+.greeting {
+    text-align: center;
+    font-size: 1.5em;
+    color: #0e5cc9;
+    margin-bottom: 30px;
+}
+
 /* ===== Сообщения ===== */
 .message {
   text-align: center;

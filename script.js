@@ -292,6 +292,8 @@ let currentQuestions = [];
 let currentIndex = 0;
 let score = 0;
 let answered = false;
+let continueBtn = null; // кнопка «Продолжить» для неправильного ответа
+let autoNextTimer = null; // таймер автоперехода при правильном ответе
 
 // Заполняем выпадающий список темами
 Object.keys(WORDS).forEach(theme => {
@@ -332,7 +334,31 @@ function buildQuestions(pool, count) {
   });
 }
 
+// Убираем кнопку «Продолжить» и таймер, если остались
+function clearContinueAndTimer() {
+  if (continueBtn) {
+    continueBtn.remove();
+    continueBtn = null;
+  }
+  if (autoNextTimer) {
+    clearTimeout(autoNextTimer);
+    autoNextTimer = null;
+  }
+}
+
+// Переход к следующему вопросу / финишу
+function goToNext() {
+  clearContinueAndTimer();
+  currentIndex++;
+  if (currentIndex < currentQuestions.length) {
+    showQuestion();
+  } else {
+    finishQuiz();
+  }
+}
+
 function startQuiz() {
+  clearContinueAndTimer();
   const theme = themeSelect.value;
   const pool = getWordPool(theme);
   currentQuestions = buildQuestions(pool, QUESTIONS_PER_ROUND);
@@ -352,6 +378,7 @@ function showQuestion() {
   answered = false;
   messageEl.textContent = '';
   messageEl.className = 'message';
+  clearContinueAndTimer();
 
   const q = currentQuestions[currentIndex];
   wordEl.textContent = q.word.en;
@@ -375,30 +402,33 @@ function handleAnswer(btn, chosen, correct) {
   if (answered) return;
   answered = true;
 
+  // Подсвечиваем правильный вариант всегда
   const allOptions = optionsEl.querySelectorAll('.option');
   allOptions.forEach(o => {
     if (o.textContent === correct) o.classList.add('correct');
+    o.disabled = true; // блокируем повторные клики
   });
 
   if (chosen === correct) {
+    // Правильно — автопереход через 1.2 сек
     score++;
     scoreEl.textContent = score;
     messageEl.textContent = '✅ Правильно!';
     messageEl.className = 'message good';
+    autoNextTimer = setTimeout(goToNext, 1200);
   } else {
+    // Неправильно — подсвечиваем ошибку и показываем кнопку «Продолжить»
     btn.classList.add('wrong');
     messageEl.textContent = '❌ Правильный ответ: ' + correct;
     messageEl.className = 'message bad';
-  }
 
-  setTimeout(() => {
-    currentIndex++;
-    if (currentIndex < currentQuestions.length) {
-      showQuestion();
-    } else {
-      finishQuiz();
-    }
-  }, 1200);
+    continueBtn = document.createElement('button');
+    continueBtn.className = 'continue-btn';
+    continueBtn.textContent = 'Продолжить →';
+    continueBtn.addEventListener('click', goToNext);
+    // Вставляем кнопку после блока с вариантами
+    optionsEl.insertAdjacentElement('afterend', continueBtn);
+  }
 }
 
 function finishQuiz() {

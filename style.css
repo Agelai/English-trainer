@@ -1,14 +1,20 @@
 * { box-sizing: border-box; }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
   min-height: 100vh;
-  margin: 0;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  -webkit-text-size-adjust: 100%;
 }
 
 .app {
@@ -25,6 +31,16 @@ h1 {
   color: #4a3f8f;
   margin-top: 0;
   font-size: 24px;
+  line-height: 1.3;
+}
+
+/* ===== Приветствие ===== */
+.greeting {
+  text-align: center;
+  font-size: 1.3em;
+  color: #0e5cc9;
+  margin-bottom: 25px;
+  line-height: 1.4;
 }
 
 /* ===== Управление ===== */
@@ -36,11 +52,12 @@ h1 {
 }
 
 select, button {
-  padding: 10px 16px;
+  padding: 12px 16px;
   border-radius: 10px;
   font-size: 15px;
   cursor: pointer;
   font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 select {
@@ -71,6 +88,10 @@ button:hover {
   transform: translateY(-2px);
 }
 
+button:active {
+  transform: translateY(0);
+}
+
 button:disabled {
   background: #ccc;
   cursor: not-allowed;
@@ -93,6 +114,7 @@ button:disabled {
   color: #1a1a2e;
   margin-bottom: 8px;
   word-break: break-word;
+  line-height: 1.2;
 }
 
 .transcription {
@@ -101,7 +123,7 @@ button:disabled {
   margin-bottom: 20px;
 }
 
-/* ===== Варианты ответов — контрастные ===== */
+/* ===== Варианты ответов ===== */
 .options {
   display: grid;
   gap: 10px;
@@ -118,6 +140,7 @@ button:disabled {
   cursor: pointer;
   transition: 0.15s;
   text-align: left;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .option:hover:not(.correct):not(.wrong) {
@@ -157,11 +180,16 @@ button:disabled {
   border: none;
   cursor: pointer;
   transition: 0.2s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .continue-btn:hover {
   background: #667eea;
   transform: translateY(-2px);
+}
+
+.continue-btn:active {
+  transform: translateY(0);
 }
 
 /* ===== Статистика и прогресс ===== */
@@ -193,13 +221,6 @@ button:disabled {
   transition: width 0.3s;
 }
 
-.greeting {
-    text-align: center;
-    font-size: 1.5em;
-    color: #0e5cc9;
-    margin-bottom: 30px;
-}
-
 /* ===== Сообщения ===== */
 .message {
   text-align: center;
@@ -225,4 +246,205 @@ button:disabled {
 .finished p {
   color: #1a1a2e;
   font-size: 17px;
+}
+
+/* ============================================================
+   АДАПТИВНОСТЬ ПОД МОБИЛЬНЫЕ ТЕЛЕФОНЫ
+   ============================================================ */
+
+/* Планшеты и небольшие экраны (до 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  .app {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 21px;
+  }
+
+  .greeting {
+    font-size: 1.15em;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    padding: 24px 16px;
+  }
+
+  .word {
+    font-size: 36px;
+  }
+
+  .transcription {
+    font-size: 16px;
+  }
+}
+
+/* Телефоны (до 600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 8px;
+    align-items: flex-start;
+  }
+
+  .app {
+    padding: 18px 14px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+
+  h1 {
+    font-size: 19px;
+  }
+
+  .greeting {
+    font-size: 1.05em;
+    margin-bottom: 16px;
+  }
+
+  /* Контролы — в столбик, на всю ширину */
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  select, #startBtn {
+    width: 100%;
+    flex: none;
+    padding: 14px;
+    font-size: 16px; /* 16px — чтобы iOS не зумил при фокусе */
+  }
+
+  /* Статистика — компактнее */
+  .stats {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .progress-bar {
+    height: 6px;
+    margin-bottom: 14px;
+  }
+
+  /* Карточка со словом */
+  .card {
+    padding: 20px 12px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+  }
+
+  .word {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+
+  .transcription {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  /* Варианты ответов — крупные, удобные для пальца */
+  .option {
+    padding: 16px 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+  }
+
+  .option:hover:not(.correct):not(.wrong) {
+    transform: none; /* на телефоне hover не нужен */
+  }
+
+  .message {
+    font-size: 16px;
+    min-height: 22px;
+  }
+
+  .continue-btn {
+    padding: 16px;
+    font-size: 16px;
+    min-height: 54px;
+    margin-top: 14px;
+  }
+
+  /* Финал */
+  .finished {
+    padding: 12px;
+  }
+
+  .finished h2 {
+    font-size: 20px;
+  }
+
+  .finished p {
+    font-size: 15px;
+  }
+}
+
+/* Очень узкие телефоны (до 380px) */
+@media (max-width: 380px) {
+  .app {
+    padding: 14px 10px;
+  }
+
+  h1 {
+    font-size: 17px;
+  }
+
+  .greeting {
+    font-size: 0.98em;
+  }
+
+  .word {
+    font-size: 26px;
+  }
+
+  .option {
+    font-size: 15px;
+    padding: 14px 12px;
+  }
+}
+
+/* ============================================================
+   КОМПЬЮТЕР: широкие экраны — чуть просторнее
+   ============================================================ */
+@media (min-width: 1024px) {
+  .app {
+    max-width: 640px;
+    padding: 36px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .word {
+    font-size: 46px;
+  }
+
+  .option {
+    font-size: 18px;
+    padding: 16px 20px;
+  }
+}
+
+/* Убираем «липкий» hover на устройствах без мыши (телефоны/планшеты) */
+@media (hover: none) {
+  .option:hover:not(.correct):not(.wrong) {
+    background: #ffffff;
+    border-color: #4a3f8f;
+    transform: none;
+  }
+
+  button:hover {
+    transform: none;
+  }
 }

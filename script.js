@@ -270,7 +270,7 @@ const WORDS = {
 };
 
 // ===== ЛОГИКА ТРЕНАЖЁРА =====
-const QUESTIONS_PER_ROUND = 10;
+const QUESTIONS_PER_ROUND = 20;
 
 const themeSelect = document.getElementById('themeSelect');
 const startBtn = document.getElementById('startBtn');

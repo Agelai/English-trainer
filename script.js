@@ -1,4 +1,4 @@
-// ===== СЛОВАРЬ (из файлов Spotlight 2, 3, 4) =====
+// ===== СЛОВАРЬ (из файлов Spotlight 2, 3, 4, 5) =====
 const WORDS = {
   "Семья (2 кл)": [
     { en: "family", ru: "семья", tr: "[ˈfæmɪlɪ]" },
@@ -19,7 +19,8 @@ const WORDS = {
     { en: "brown", ru: "коричневый", tr: "[braʊn]" },
     { en: "grey", ru: "серый", tr: "[ɡrei]" },
     { en: "orange", ru: "оранжевый", tr: "[ˈorindӡ]" },
-    { en: "pink", ru: "розовый", tr: "[pɪnk]" }
+    { en: "pink", ru: "розовый", tr: "[pɪnk]" },
+    { en: "purple", ru: "фиолетовый", tr: "[ˈpɜ:pl]" }
   ],
   "Дом (2–3 кл)": [
     { en: "home", ru: "дом", tr: "[həʊm]" },
@@ -266,6 +267,521 @@ const WORDS = {
     { en: "drums", ru: "барабаны", tr: "[drʌmz]" },
     { en: "violin", ru: "скрипка", tr: "[vaiəˈlin]" },
     { en: "guitar", ru: "гитара", tr: "[ɡiˈta:]" }
+  ],
+
+   // ===== НОВЫЕ ТЕМЫ ИЗ SPOTLIGHT 5 =====
+  "Частые глаголы (5 кл)": [
+    { en: "draw", ru: "рисовать", tr: "[drɔ:]" },
+    { en: "eat", ru: "есть", tr: "[i:t]" },
+    { en: "look", ru: "смотреть", tr: "[lʊk]" },
+    { en: "count", ru: "считать", tr: "[kaʊnt]" },
+    { en: "read", ru: "читать", tr: "[ri:d]" },
+    { en: "speak", ru: "говорить", tr: "[spi:k]" },
+    { en: "write", ru: "писать", tr: "[raɪt]" }
+  ],
+  "Школьные принадлежности (5 кл)": [
+    { en: "pencil case", ru: "пенал", tr: "[ˈpensəl keɪs]" },
+    { en: "pencil sharpener", ru: "точилка", tr: "[ˈpensəl ˈʃa:pənə]" },
+    { en: "eraser", ru: "ластик", tr: "[ɪˈreɪzə]" },
+    { en: "notebook", ru: "блокнот, тетрадь", tr: "[ˈnəʊtbʊk]" },
+    { en: "notepad", ru: "блокнотик", tr: "[ˈnəʊtpæd]" },
+    { en: "school bag", ru: "школьная сумка", tr: "[sku:l bæɡ]" },
+    { en: "blackboard", ru: "школьная доска", tr: "[ˈblækbɔ:d]" },
+    { en: "atlas", ru: "атлас", tr: "[ˈætləs]" },
+    { en: "timetable", ru: "расписание", tr: "[ˈtaɪmteɪbl]" },
+    { en: "desk", ru: "парта, письменный стол", tr: "[desk]" },
+    { en: "glue", ru: "клей", tr: "[ɡlu:]" },
+    { en: "paper clips", ru: "канцелярские скрепки", tr: "[ˈpeɪpə klɪps]" },
+    { en: "crayons", ru: "восковые мелки", tr: "[ˈkreɪənz]" }
+  ],
+  "Работаем вместе (5 кл)": [
+    { en: "along", ru: "самостоятельно", tr: "[əˈlɒŋ]" },
+    { en: "in pairs", ru: "в парах", tr: "[ɪn ˈpɛəz]" },
+    { en: "in groups", ru: "в группах", tr: "[ɪn ɡru:ps]" },
+    { en: "to look at", ru: "смотреть на", tr: "[tu: lʊk æt]" },
+    { en: "to listen to", ru: "слушать", tr: "[tu: lɪsn tu]" },
+    { en: "to say", ru: "сказать, говорить", tr: "[tu: seɪ]" },
+    { en: "to smile", ru: "улыбаться", tr: "[tu: smaɪl]" },
+    { en: "to share", ru: "делиться", tr: "[tu: ʃeə]" },
+    { en: "to think", ru: "думать", tr: "[tu: θɪŋk]" },
+    { en: "to ask", ru: "спрашивать", tr: "[tu: a:sk]" }
+  ],
+  "Я из… (5 кл)": [
+    { en: "The UK (British)", ru: "Соединённое Королевство (британец)", tr: "[ðə ju:ˈkeɪ]" },
+    { en: "The USA (American)", ru: "США (американец)", tr: "[ðə ju:ˈesˈeɪ]" },
+    { en: "Canada (Canadian)", ru: "Канада (канадец)", tr: "[ˈkænədə]" },
+    { en: "Australia (Australian)", ru: "Австралия (австралиец)", tr: "[ɒstˈreɪlɪə]" },
+    { en: "New Zealand (New Zealander)", ru: "Новая Зеландия (новозеландец)", tr: "[nju:ˈzi:lənd]" },
+    { en: "France (French)", ru: "Франция (француз)", tr: "[fra:ns]" },
+    { en: "Japan (Japanese)", ru: "Япония (японец)", tr: "[dʒʌˈpæn]" }
+  ],
+  "Изумительный человек-паук (5 кл)": [
+    { en: "quiet", ru: "тихий, спокойный", tr: "[ˈkwaɪət]" },
+    { en: "next door", ru: "по соседству", tr: "[nekst dɔ:]" },
+    { en: "to bite", ru: "кусать", tr: "[tu: baɪt]" },
+    { en: "powers", ru: "силы", tr: "[paʊəz]" },
+    { en: "fast", ru: "быстрый", tr: "[fa:st]" },
+    { en: "walls", ru: "стены", tr: "[wɔ:lz]" },
+    { en: "enemy", ru: "враг", tr: "[ˈenəmɪ]" },
+    { en: "to watch", ru: "смотреть", tr: "[tu: wɒtʃ]" }
+  ],
+  "Личные вещи (5 кл)": [
+    { en: "cap", ru: "кепка", tr: "[kæp]" },
+    { en: "scarf", ru: "шарф", tr: "[ska:f]" },
+    { en: "digital camera", ru: "цифровой фотоаппарат", tr: "[ˈdɪdʒɪtəl ˈkæmərə]" },
+    { en: "helmet", ru: "шлем", tr: "[ˈhelmɪt]" },
+    { en: "skateboard", ru: "скейтборд", tr: "[ˈskeɪtbɔ:d]" },
+    { en: "gloves", ru: "перчатки", tr: "[ɡlʌvz]" },
+    { en: "bicycle", ru: "велосипед", tr: "[ˈbaɪsɪkəl]" },
+    { en: "trainers", ru: "кроссовки", tr: "[ˈtreɪnəz]" },
+    { en: "handbag", ru: "дамская сумочка", tr: "[ˈhændbæɡ]" },
+    { en: "watch", ru: "часы (наручные)", tr: "[wɒtʃ]" },
+    { en: "basketball", ru: "баскетбольный мяч", tr: "[ˈba:skɪtbɔ:l]" },
+    { en: "this", ru: "этот, эта", tr: "[ðɪs]" },
+    { en: "these", ru: "эти", tr: "[ði:z]" },
+    { en: "that", ru: "тот, та", tr: "[ðæt]" },
+    { en: "those", ru: "те", tr: "[ðəʊz]" }
+  ],
+  "Моя коллекция (5 кл)": [
+    { en: "stamps", ru: "марки", tr: "[stæmps]" },
+    { en: "hats", ru: "шапки", tr: "[hæts]" },
+    { en: "books", ru: "книги", tr: "[bʊks]" },
+    { en: "coins", ru: "монеты", tr: "[ˈkɔɪnz]" }
+  ],
+  "Сувениры (5 кл)": [
+    { en: "mug", ru: "кружка", tr: "[mʌɡ]" },
+    { en: "a tartan scarf", ru: "клетчатый шарфик", tr: "[ə ˈta:tən ska:f]" },
+    { en: "staffed toy", ru: "мягкая игрушка", tr: "[stʌft tɔɪ]" },
+    { en: "toy buses", ru: "игрушечные автобусы", tr: "[tɔɪ ˈbʌsɪz]" },
+    { en: "pin", ru: "значок", tr: "[pɪn]" }
+  ],
+  "Части Соединённого Королевства (5 кл)": [
+    { en: "The UK - British", ru: "Соединённое Королевство — британец", tr: "[ðə ju:ˈkeɪ] [ˈbrɪtɪʃ]" },
+    { en: "England - English", ru: "Англия — англичанин", tr: "[ˈɪŋɡlənd] [ˈɪŋɡlɪʃ]" },
+    { en: "Scotland - Scottish", ru: "Шотландия — шотландец", tr: "[ˈskɒtlənd] [ˈskɒtɪʃ]" },
+    { en: "Wales - Welsh", ru: "Уэльс — валлиец", tr: "[ˈweɪlz] [welʃ]" },
+    { en: "Northern Ireland - Northern Irish", ru: "Северная Ирландия — ирландец", tr: "[ˈnɔ:ðən ˈaɪlənd] [ˈnɔ:ðən ˈaɪrɪʃ]" }
+  ],
+  "Покупаем сувенир (5 кл)": [
+    { en: "key ring", ru: "брелок для ключей", tr: "[ki: rɪŋ]" },
+    { en: "umbrella", ru: "зонт", tr: "[ʌmˈbrelə]" },
+    { en: "thermos flask", ru: "термос", tr: "[ˈθɜ:mɒs fla:sk]" },
+    { en: "bell", ru: "колокольчик", tr: "[bel]" }
+  ],
+  "Англоговорящие страны (5 кл)": [
+    { en: "Canada (Ottawa)", ru: "Канада (Оттава)", tr: "[ˈkænədə ˈɒtəwə]" },
+    { en: "The UK (London)", ru: "Соединённое Королевство (Лондон)", tr: "[ði: ju: keɪ ˈlʌndən]" },
+    { en: "The USA (Washington DC)", ru: "США (Вашингтон)", tr: "[ðə ju: es eɪ ˈwɒʃɪŋtən di:si:]" },
+    { en: "Australia (Canberra)", ru: "Австралия (Канберра)", tr: "[ɒˈstreɪlɪə ˈkænbərə]" },
+    { en: "New Zealand (Wellington)", ru: "Новая Зеландия (Веллингтон)", tr: "[nju: ˈzi:lənd ˈwelɪŋtən]" }
+  ],
+  "Комнаты (5 кл)": [
+    { en: "hall", ru: "прихожая", tr: "[hɔ:l]" },
+    { en: "dining room", ru: "столовая", tr: "[ˈdaɪnɪŋ ru:m]" },
+    { en: "garage", ru: "гараж", tr: "[ˈɡærɑ:ʒ]" }
+  ],
+  "Живи на высоте! (5 кл)": [
+    { en: "architect", ru: "архитектор", tr: "[ˈa:kɪtekt]" },
+    { en: "unusual", ru: "необычный", tr: "[ʌnˈju:ʒuəl]" },
+    { en: "water tower", ru: "водонапорная башня", tr: "[ˈwɔ:tə ˈtaʊə]" },
+    { en: "tower", ru: "башня", tr: "[ˈtaʊə]" },
+    { en: "reception room", ru: "приёмная комната", tr: "[rɪˈsepʃən ru:m]" },
+    { en: "on the ground floor", ru: "на первом этаже", tr: "[ɒn ðə ɡraʊnd flɔ:]" },
+    { en: "14 steps", ru: "14 ступенек", tr: "[fɔ:ˈti:n steps]" },
+    { en: "keep fit", ru: "сохранять форму", tr: "[ki:p fɪt]" },
+    { en: "roof", ru: "крыша", tr: "[ru:f]" },
+    { en: "lift", ru: "лифт", tr: "[lɪft]" },
+    { en: "price", ru: "цена", tr: "[praɪs]" }
+  ],
+  "Моя спальня (5 кл)": [
+    { en: "wardrobe", ru: "шкаф для одежды", tr: "[ˈwɔ:drəʊb]" },
+    { en: "bookcase", ru: "книжный шкаф", tr: "[ˈbʊk keɪs]" },
+    { en: "carpet", ru: "ковёр", tr: "[ˈka:pɪt]" },
+    { en: "washbasin", ru: "раковина (в ванной)", tr: "[ˈwɒʃbeɪsɪn]" },
+    { en: "toilet", ru: "унитаз", tr: "[ˈtɔɪlɪt]" },
+    { en: "sink", ru: "раковина (на кухне)", tr: "[sɪŋk]" },
+    { en: "cooker", ru: "плитка (кухонная)", tr: "[ˈkʊkə]" },
+    { en: "painting", ru: "картина", tr: "[ˈpeɪntɪŋ]" },
+    { en: "window", ru: "окно", tr: "[ˈwɪndəʊ]" },
+    { en: "coffee table", ru: "журнальный столик", tr: "[ˈkɒfɪ ˈteɪbl]" },
+    { en: "armchair", ru: "кресло", tr: "[ˈa:mtʃeə]" },
+    { en: "tub", ru: "ванна", tr: "[tʌb]" }
+  ],
+  "Дом на две семьи (5 кл)": [
+    { en: "downstairs", ru: "внизу (в доме)", tr: "[ˈdaʊnsteəz]" },
+    { en: "upstairs", ru: "наверху (в доме)", tr: "[ˈʌpsteəz]" },
+    { en: "bricks", ru: "кирпичи", tr: "[brɪks]" },
+    { en: "central heating", ru: "центральное отопление", tr: "[ˈsentrəl ˈhi:tɪŋ]" },
+    { en: "outside", ru: "снаружи", tr: "[aʊtˈsaɪd]" },
+    { en: "inside", ru: "внутри", tr: "[ɪnˈsaɪd]" },
+    { en: "special features", ru: "особые черты", tr: "[ˈspeʃl ˈfi:tʃəz]" },
+    { en: "front garden", ru: "передний сад", tr: "[frʌnt ɡa:dn]" },
+    { en: "back garden", ru: "задний сад", tr: "[bæk ɡa:dn]" }
+  ],
+  "Тадж-Махал (5 кл)": [
+    { en: "dome", ru: "купол", tr: "[dəʊm]" },
+    { en: "wall", ru: "стена", tr: "[wɔ:l]" },
+    { en: "minaret", ru: "минарет", tr: "[mɪnəˈret]" },
+    { en: "pool", ru: "бассейн", tr: "[pu:l]" },
+    { en: "marble", ru: "мрамор", tr: "[ma:bl]" },
+    { en: "glass", ru: "стекло", tr: "[ɡla:s]" },
+    { en: "a brick", ru: "кирпич", tr: "[ə brɪk]" },
+    { en: "stones", ru: "камни", tr: "[stəʊnz]" },
+    { en: "precious", ru: "драгоценный, ценный", tr: "[ˈpreʃəs]" },
+    { en: "a pearl", ru: "жемчужина", tr: "[ə pɜ:l]" },
+    { en: "to shine", ru: "светить, блестеть", tr: "[tu: ʃaɪn]" },
+    { en: "corner", ru: "угол", tr: "[ˈkɔ:nə]" }
+  ],
+  "Характер (5 кл)": [
+    { en: "cool", ru: "классный", tr: "[ku:l]" },
+    { en: "sweet", ru: "сладкий, милый", tr: "[swi:t]" },
+    { en: "clever", ru: "умный", tr: "[ˈklevə]" },
+    { en: "noisy", ru: "шумный", tr: "[ˈnɔɪzɪ]" },
+    { en: "naughty", ru: "непослушный", tr: "[ˈnɔ:tɪ]" },
+    { en: "caring", ru: "заботливый, внимательный", tr: "[ˈkeərɪŋ]" }
+  ],
+  "Кто есть кто? (5 кл)": [
+    { en: "facial features", ru: "черты лица", tr: "[ˈfeɪʃl ˈfi:tʃəz]" },
+    { en: "big mouth", ru: "большой рот", tr: "[bɪɡ maʊθ]" },
+    { en: "big nose", ru: "большой нос", tr: "[bɪɡ nəʊz]" },
+    { en: "red moustache", ru: "красные усы", tr: "[red mʌsˈta:ʃ]" },
+    { en: "big eyes", ru: "большие глаза", tr: "[bɪɡ aɪz]" },
+    { en: "small nose", ru: "маленький нос", tr: "[smɔ:l nəʊz]" },
+    { en: "small mouth", ru: "маленький рот", tr: "[smɔ:l maʊθ]" },
+    { en: "long ears", ru: "длинные уши", tr: "[lɒŋ ɪəz]" },
+    { en: "height", ru: "рост", tr: "[haɪt]" },
+    { en: "average", ru: "средний", tr: "[ˈævərɪdʒ]" },
+    { en: "red hair", ru: "рыжие волосы", tr: "[red heə]" },
+    { en: "fair hair", ru: "светлые волосы", tr: "[feə heə]" },
+    { en: "brown hair", ru: "каштановые волосы", tr: "[braʊn heə]" },
+    { en: "curly hair", ru: "кучерявые волосы", tr: "[ˈkɜ:lɪ heə]" },
+    { en: "wavy hair", ru: "волнистые волосы", tr: "[ˈweɪvɪ heə]" },
+    { en: "build", ru: "строение тела", tr: "[bi:ld]" }
+  ],
+  "Сравнения (5 кл)": [
+    { en: "as playful as a kitten", ru: "игривый, как котёнок", tr: "[əz ˈpleɪfʊl əz ə ˈkɪtn]" },
+    { en: "as proud as a peacock", ru: "гордый, как павлин", tr: "[əz praʊd əz ə ˈpi:kɒk]" },
+    { en: "as quiet as a mouse", ru: "тихий, как мышка", tr: "[əz ˈkwaɪət əz ə maʊs]" },
+    { en: "as wise as an owl", ru: "мудрый, как сова", tr: "[əz waɪz əz ən aʊl]" },
+    { en: "as gentle as a lamb", ru: "нежный, как ягнёнок", tr: "[əz ˈdʒentl əz ə læm]" },
+    { en: "as strong as an ox", ru: "сильный, как бык", tr: "[əz strɒŋ əz ən ɒks]" },
+    { en: "as busy as a bee", ru: "трудолюбивый, как пчела", tr: "[əz ˈbɪzɪ əz ə bi:]" },
+    { en: "as stubborn as a mule", ru: "упрямый, как мул", tr: "[əz ˈstʌbən əz ə mju:l]" },
+    { en: "as slow as a snail", ru: "медлительный, как улитка", tr: "[əz sləʊ əz ə sneɪl]" }
+  ],
+  "Изумительные создания (5 кл)": [
+    { en: "lion", ru: "лев", tr: "[ˈlaɪən]" },
+    { en: "camel", ru: "верблюд", tr: "[ˈkæməl]" },
+    { en: "elephant", ru: "слон", tr: "[ˈelɪfənt]" },
+    { en: "cobra", ru: "кобра", tr: "[ˈkəʊbrə]" },
+    { en: "deer", ru: "олень", tr: "[dɪə]" },
+    { en: "rhino", ru: "носорог", tr: "[ˈraɪnəʊ]" },
+    { en: "leopard", ru: "леопард", tr: "[ˈlepəd]" },
+    { en: "tiger", ru: "тигр", tr: "[ˈtaɪɡə]" }
+  ],
+  "Животные Индии (5 кл)": [
+    { en: "stripes", ru: "полоски", tr: "[straɪps]" },
+    { en: "to hide", ru: "прятать(ся)", tr: "[tu: haɪd]" },
+    { en: "to hunt", ru: "охотиться", tr: "[tu: hʌnt]" },
+    { en: "dangerous", ru: "опасный", tr: "[ˈdeɪndʒərəs]" },
+    { en: "heavy", ru: "тяжёлый", tr: "[ˈhevɪ]" },
+    { en: "trunk", ru: "хобот", tr: "[trʌnk]" },
+    { en: "horn", ru: "рог", tr: "[hɔ:n]" },
+    { en: "alone", ru: "один", tr: "[əˈləʊn]" },
+    { en: "mud", ru: "грязь", tr: "[mʌd]" }
+  ],
+  "В зоопарке (5 кл)": [
+    { en: "bear", ru: "медведь", tr: "[beə]" },
+    { en: "peacock", ru: "павлин", tr: "[ˈpi:kɒk]" },
+    { en: "tusks", ru: "бивни", tr: "[tʌsks]" },
+    { en: "fur", ru: "мех", tr: "[fɜ:]" },
+    { en: "beak", ru: "клюв", tr: "[bi:k]" },
+    { en: "wings", ru: "крылья", tr: "[wɪŋz]" },
+    { en: "feathers", ru: "перья", tr: "[ˈfeðəz]" },
+    { en: "paws", ru: "лапы", tr: "[pɔ:z]" },
+    { en: "neck", ru: "шея", tr: "[nek]" },
+    { en: "mane", ru: "грива", tr: "[meɪn]" }
+  ],
+  "Мой питомец (5 кл)": [
+    { en: "dog", ru: "собака", tr: "[dɒɡ]" },
+    { en: "duck", ru: "утка", tr: "[dʌk]" },
+    { en: "goose", ru: "гусь", tr: "[ɡu:z]" },
+    { en: "hen", ru: "курица", tr: "[hen]" },
+    { en: "goldfish", ru: "золотая рыбка", tr: "[ˈɡəʊldfɪʃ]" },
+    { en: "cow", ru: "корова", tr: "[kaʊ]" },
+    { en: "budgie", ru: "волнистый попугайчик", tr: "[ˈbʌdʒɪ]" },
+    { en: "sheep", ru: "овца", tr: "[ʃi:p]" },
+    { en: "goat", ru: "козёл", tr: "[ɡəʊt]" },
+    { en: "cat", ru: "кот", tr: "[kæt]" },
+    { en: "guinea pig", ru: "морская свинка", tr: "[ˈɡɪnɪ pɪɡ]" }
+  ],
+  "Питомцы и здоровье (5 кл)": [
+    { en: "fleas", ru: "блохи", tr: "[fli:z]" },
+    { en: "broken wing", ru: "сломанное крыло", tr: "[ˈbrəʊkn wɪŋ]" },
+    { en: "toothache", ru: "зубная боль", tr: "[ˈtu:θeɪk]" },
+    { en: "earache", ru: "боль в ухе", tr: "[ˈɪəreɪk]" },
+    { en: "hamster", ru: "хомяк", tr: "[ˈhæmstə]" }
+  ],
+  "Насекомые (5 кл)": [
+    { en: "mosquito", ru: "комар", tr: "[mɒsˈki:təʊ]" },
+    { en: "wasps", ru: "осы", tr: "[wɒsps]" },
+    { en: "butterfly", ru: "бабочка", tr: "[ˈbʌtəflaɪ]" },
+    { en: "dragonfly", ru: "стрекоза", tr: "[ˈdræɡnflaɪ]" },
+    { en: "beetle", ru: "жук", tr: "[bi:tl]" },
+    { en: "fly", ru: "муха", tr: "[flaɪ]" },
+    { en: "bee", ru: "пчела", tr: "[bi:]" },
+    { en: "ladybirds", ru: "божьи коровки", tr: "[ˈleɪdɪbɜ:dz]" },
+    { en: "grasshopper", ru: "кузнечик", tr: "[ˈɡrɑ:shɒpə]" },
+    { en: "ant", ru: "муравей", tr: "[ænt]" },
+    { en: "antennae", ru: "усики (у насекомых)", tr: "[ænˈteni:]" }
+  ],
+  "Просыпайся! (5 кл)": [
+    { en: "in the morning", ru: "утром", tr: "[ɪn ðə ˈmɔ:nɪŋ]" },
+    { en: "get up", ru: "вставать", tr: "[ɡet ʌp]" },
+    { en: "go jogging", ru: "идти на пробежку", tr: "[ɡəʊ ˈdʒɒɡɪŋ]" },
+    { en: "go to school", ru: "идти в школу", tr: "[ɡəʊ tu: sku:l]" },
+    { en: "have breakfast", ru: "завтракать", tr: "[hæv ˈbrekfəst]" },
+    { en: "in the afternoon", ru: "в полдень", tr: "[ɪn ði: a:ftəˈnu:n]" },
+    { en: "have lunch", ru: "обедать", tr: "[hæv lʌntʃ]" },
+    { en: "do homework", ru: "делать домашнюю работу", tr: "[du: ˈhəʊmwɜ:k]" },
+    { en: "have a cup of tea", ru: "выпить чашечку чая", tr: "[hæv ə kʌp əv ti:]" },
+    { en: "work on computer", ru: "работать на компьютере", tr: "[wɜ:k ɒn kəmˈpju:tə]" },
+    { en: "in the evening", ru: "вечером", tr: "[ɪn ði: ˈi:vnɪŋ]" },
+    { en: "go to bed", ru: "идти спать", tr: "[ɡəʊ tu: bed]" },
+    { en: "eat dinner", ru: "есть ужин", tr: "[i:t ˈdɪnə]" },
+    { en: "do the shopping", ru: "делать покупки", tr: "[du: ðə ˈʃɒpɪŋ]" },
+    { en: "watch a DVD", ru: "смотреть DVD", tr: "[wɒtʃ ə di:vi:di:]" }
+  ],
+  "Профессии (5 кл)": [
+    { en: "painter", ru: "художник, маляр", tr: "[ˈpeɪntə]" },
+    { en: "doctor", ru: "доктор", tr: "[ˈdɒktə]" },
+    { en: "teacher", ru: "учитель", tr: "[ˈti:tʃə]" }
+  ],
+  "На работе (5 кл)": [
+    { en: "to read a book", ru: "читать книгу", tr: "[tu: ri:d ə bʊk]" },
+    { en: "to talk", ru: "разговаривать", tr: "[tu: tɔ:k]" },
+    { en: "to say goodbye to the children", ru: "прощаться с детьми", tr: "[tu: seɪ ɡʊdˈbaɪ tu: ðə ˈtʃɪldrən]" },
+    { en: "to paint a hospital", ru: "красить больницу", tr: "[tu: peɪnt ə ˈhɒspɪtəl]" },
+    { en: "to look at the postman", ru: "смотреть на почтальона", tr: "[tu: lʊk æt ðə ˈpəʊstmən]" },
+    { en: "to repair a car", ru: "чинить машину", tr: "[tu: rɪˈpeə ə ka:]" },
+    { en: "to wait for the ambulance", ru: "ждать скорую помощь", tr: "[tu: weɪt fɔ: ði: ˈæmbjuləns]" },
+    { en: "to deliver a letter", ru: "доставлять письмо", tr: "[tu: dɪˈlɪvə ə ˈletə]" },
+    { en: "to drive a taxi", ru: "водить такси", tr: "[tu: draɪv ə ˈtæksɪ]" },
+    { en: "to serve drinks", ru: "обслуживать напитками", tr: "[tu: sɜ:v drɪŋks]" }
+  ],
+  "Выходные (5 кл)": [
+    { en: "to write an email", ru: "написать электронное письмо", tr: "[tu: raɪt ən ˈi:meɪl]" },
+    { en: "to wash the dog", ru: "помыть собаку", tr: "[tu: wɒʃ ðə dɒɡ]" },
+    { en: "to play with a friend", ru: "играть с другом", tr: "[tu: pleɪ wɪð ə frend]" },
+    { en: "to make a phone call", ru: "сделать телефонный звонок", tr: "[tu: meɪk ə fəʊn kɔ:l]" },
+    { en: "to work in the garden", ru: "работать в саду", tr: "[tu: wɜ:k ɪn ðə ɡa:dn]" },
+    { en: "to plant flowers", ru: "сажать цветы", tr: "[tu: pla:nt flaʊəz]" },
+    { en: "to drink coffee", ru: "пить кофе", tr: "[tu: drɪŋk ˈkɒfɪ]" }
+  ],
+  "Достопримечательности (5 кл)": [
+    { en: "belfry", ru: "колокольня", tr: "[ˈbelfri:]" },
+    { en: "clockface", ru: "циферблат", tr: "[ˈklɒkfeɪs]" },
+    { en: "long (minute) hand", ru: "минутная стрелка", tr: "[lɒŋ hænd]" },
+    { en: "short (hour) hand", ru: "часовая стрелка", tr: "[ʃɔ:t hænd]" },
+    { en: "commissioner", ru: "заказчик", tr: "[kəˈmɪʃənə]" },
+    { en: "huge", ru: "огромный", tr: "[hju:dʒ]" },
+    { en: "high", ru: "высота", tr: "[haɪ]" },
+    { en: "wide", ru: "ширина", tr: "[waɪd]" }
+  ],
+  "С солнечным светом (5 кл)": [
+    { en: "sundial", ru: "солнечные часы", tr: "[ˈsʌndaɪəl]" },
+    { en: "shadow", ru: "тень", tr: "[ˈʃædəʊ]" },
+    { en: "straw", ru: "соломинка", tr: "[strɔ:]" },
+    { en: "compass", ru: "компас", tr: "[ˈkʌmpəs]" },
+    { en: "plastic cup", ru: "пластиковый стаканчик", tr: "[ˈplæstɪk kʌp]" },
+    { en: "adhesive tape", ru: "клейкая лента (скотч)", tr: "[ədˈhi:sɪv teɪp]" },
+    { en: "plastic lid", ru: "пластиковая крышка", tr: "[ˈplæstɪk lɪd]" }
+  ],
+  "Год за годом (5 кл)": [
+    { en: "Winter", ru: "зима", tr: "[ˈwɪntə]" },
+    { en: "December", ru: "декабрь", tr: "[dɪˈsembə]" },
+    { en: "January", ru: "январь", tr: "[ˈdʒænjuəri]" },
+    { en: "February", ru: "февраль", tr: "[ˈfebrʊəri]" },
+    { en: "Spring", ru: "весна", tr: "[sprɪŋ]" },
+    { en: "March", ru: "март", tr: "[ma:tʃ]" },
+    { en: "April", ru: "апрель", tr: "[ˈeɪprəl]" },
+    { en: "May", ru: "май", tr: "[meɪ]" },
+    { en: "Summer", ru: "лето", tr: "[ˈsʌmə]" },
+    { en: "June", ru: "июнь", tr: "[dʒu:n]" },
+    { en: "July", ru: "июль", tr: "[dʒu:ˈlaɪ]" },
+    { en: "August", ru: "август", tr: "[ˈɔ:ɡəst]" },
+    { en: "Autumn", ru: "осень", tr: "[ˈɔ:təm]" },
+    { en: "September", ru: "сентябрь", tr: "[sepˈtembə]" },
+    { en: "October", ru: "октябрь", tr: "[ɒkˈtəʊbə]" },
+    { en: "November", ru: "ноябрь", tr: "[nəʊˈvembə]" }
+  ],
+  "Занятия (5 кл)": [
+    { en: "to pick flowers", ru: "собирать цветы", tr: "[tu: pɪk ˈflaʊəz]" },
+    { en: "to rake leaves", ru: "сгребать листья", tr: "[tu: reɪk li:vz]" },
+    { en: "to play in the snow", ru: "играть со снегом", tr: "[tu: pleɪ ɪn ðə snəʊ]" },
+    { en: "to go swimming", ru: "идти поплавать", tr: "[tu: ɡəʊ ˈswɪmɪŋ]" }
+  ],
+  "О погоде (5 кл)": [
+    { en: "It's awful!", ru: "Ужасно!", tr: "[ɪts ˈɔ:fəl]" },
+    { en: "It's terrible!", ru: "Ужасно!", tr: "[ɪts ˈterəbl]" },
+    { en: "It's freezing!", ru: "Морозно!", tr: "[ɪts ˈfri:zɪŋ]" },
+    { en: "It's cold!", ru: "Холодно!", tr: "[ɪts kəʊld]" },
+    { en: "It's a lovely day!", ru: "Очаровательный день!", tr: "[ɪts ə ˈlʌvlɪ deɪ]" },
+    { en: "It's a beautiful day!", ru: "Красивый день!", tr: "[ɪts ə ˈbju:tɪfʊl deɪ]" },
+    { en: "It's warm!", ru: "Тепло!", tr: "[ɪts wɔ:m]" },
+    { en: "It's very hot!", ru: "Очень жарко!", tr: "[ɪts ˈverɪ hɒt]" },
+    { en: "It's fabulous!", ru: "Потрясающе!", tr: "[ɪts ˈfæbjʊləs]" }
+  ],
+  "Оденься правильно! (5 кл)": [
+    { en: "blouse", ru: "блузка", tr: "[blaʊz]" },
+    { en: "high heels", ru: "высокие каблуки", tr: "[haɪ hi:lz]" },
+    { en: "trousers", ru: "брюки", tr: "[ˈtraʊzəz]" },
+    { en: "shirt", ru: "рубашка", tr: "[ʃɜ:t]" },
+    { en: "tie", ru: "галстук", tr: "[taɪ]" },
+    { en: "raincoat", ru: "плащ", tr: "[ˈreɪnkəʊt]" },
+    { en: "jumper", ru: "джемпер", tr: "[ˈdʒʌmpə]" },
+    { en: "suit", ru: "костюм", tr: "[su:t]" },
+    { en: "dress", ru: "платье", tr: "[dres]" },
+    { en: "bag", ru: "сумка", tr: "[bæɡ]" },
+    { en: "wear", ru: "носить, быть одетым", tr: "[weə]" },
+    { en: "put on", ru: "одевать", tr: "[pʊt ɒn]" },
+    { en: "tight", ru: "тесный, узкий", tr: "[taɪt]" },
+    { en: "light", ru: "лёгкий", tr: "[laɪt]" },
+    { en: "loose", ru: "свободный (об одежде)", tr: "[lu:s]" }
+  ],
+  "Это весело! (5 кл)": [
+    { en: "go skiing", ru: "кататься на лыжах", tr: "[ɡəʊ ˈski:ɪŋ]" },
+    { en: "watch TV", ru: "смотреть телевизор", tr: "[wɒtʃ ti:ˈvi:]" },
+    { en: "read a book", ru: "читать книгу", tr: "[ri:d ə bʊk]" },
+    { en: "have a picnic", ru: "устроить пикник", tr: "[hæv ə ˈpɪknɪk]" },
+    { en: "go camping", ru: "ходить в поход", tr: "[ɡəʊ ˈkæmpɪŋ]" }
+  ],
+  "Литература (5 кл)": [
+    { en: "sky", ru: "небо", tr: "[skaɪ]" },
+    { en: "wind", ru: "ветер", tr: "[wɪnd]" },
+    { en: "leaves", ru: "листья", tr: "[li:vz]" },
+    { en: "branches", ru: "ветки", tr: "[ˈbra:ntʃɪz]" }
+  ],
+  "Праздники (5 кл)": [
+    { en: "set off fireworks", ru: "запускать фейерверки", tr: "[set ɒf ˈfaɪəwɜ:ks]" },
+    { en: "dress up", ru: "наряжаться", tr: "[dres ʌp]" },
+    { en: "have street parades", ru: "устраивать уличные парады", tr: "[hæv stri:t pəˈreɪdz]" },
+    { en: "light bonfires", ru: "зажигать костры", tr: "[laɪt ˈbɒnfaɪəz]" },
+    { en: "decorate the house", ru: "украшать дом", tr: "[ˈdekəreɪt ðə haʊs]" },
+    { en: "exchange gifts", ru: "обмениваться подарками", tr: "[ɪksˈtʃeɪndʒ ɡɪfts]" },
+    { en: "have a family dinner", ru: "устроить семейный ужин", tr: "[hæv ə ˈfæmɪlɪ ˈdɪnə]" },
+    { en: "cook special food", ru: "готовить особую еду", tr: "[kʊk ˈspeʃl fu:d]" }
+  ],
+  "Урожай (5 кл)": [
+    { en: "cranberry sauce", ru: "клюквенный соус", tr: "[ˈkrænbərɪ sɔ:s]" },
+    { en: "dessert", ru: "десерт", tr: "[dɪˈzɜ:t]" },
+    { en: "varieties", ru: "разнообразие", tr: "[vəˈraɪətɪz]" },
+    { en: "cookery competition", ru: "кулинарный конкурс", tr: "[ˈkʊkərɪ kəmˈpɪtɪʃn]" },
+    { en: "wheat", ru: "пшеница", tr: "[wi:t]" },
+    { en: "run free", ru: "бежать свободно", tr: "[rʌn fri:]" }
+  ],
+  "Шеф-повар (5 кл)": [
+    { en: "olive oil", ru: "оливковое масло", tr: "[ˈɒlɪv ɔɪl]" },
+    { en: "jam", ru: "джем, варенье", tr: "[dʒæm]" },
+    { en: "butter", ru: "сливочное масло", tr: "[ˈbʌtə]" },
+    { en: "cheese", ru: "сыр", tr: "[tʃi:z]" },
+    { en: "egg", ru: "яйцо", tr: "[eɡ]" },
+    { en: "sausages", ru: "сосиски", tr: "[ˈsɒsɪdʒɪz]" },
+    { en: "pineapple", ru: "ананас", tr: "[ˈpaɪnæpl]" },
+    { en: "cabbage", ru: "капуста", tr: "[ˈkæbɪdʒ]" },
+    { en: "garlic", ru: "чеснок", tr: "[ˈɡa:lɪk]" },
+    { en: "orange juice", ru: "апельсиновый сок", tr: "[ˈɒrɪndʒ dʒu:s]" },
+    { en: "strawberries", ru: "земляника", tr: "[ˈstrɔ:bərɪz]" },
+    { en: "pasta", ru: "макароны", tr: "[ˈpa:stə]" },
+    { en: "bread", ru: "хлеб", tr: "[bred]" },
+    { en: "cereal", ru: "хлопья", tr: "[ˈsɪərɪəl]" },
+    { en: "cherries", ru: "вишни", tr: "[ˈtʃerɪz]" },
+    { en: "grapes", ru: "виноград", tr: "[ɡreɪps]" },
+    { en: "lemons", ru: "лимоны", tr: "[ˈlemənz]" },
+    { en: "onion", ru: "лук", tr: "[ˈʌnjən]" },
+    { en: "tomatoes", ru: "помидоры", tr: "[təˈma:təʊz]" }
+  ],
+  "Идём за покупками (5 кл)": [
+    { en: "bakery", ru: "булочная", tr: "[ˈbeɪkərɪ]" },
+    { en: "florist's", ru: "цветочный магазин", tr: "[ˈflɒrɪsts]" },
+    { en: "café", ru: "кафе", tr: "[ˈkæfeɪ]" },
+    { en: "shoe shop", ru: "обувной магазин", tr: "[ʃu: ʃɒp]" },
+    { en: "newsagent's", ru: "газетный киоск", tr: "[ˈnju:zeɪdʒənts]" },
+    { en: "greengrosser's", ru: "магазин фруктов и овощей", tr: "[ˈɡri:nɡrəʊsəz]" },
+    { en: "toy shop", ru: "магазин игрушек", tr: "[tɔɪ ʃɒp]" },
+    { en: "bookshop", ru: "книжный магазин", tr: "[ˈbʊkʃɒp]" },
+    { en: "chemist's", ru: "аптека", tr: "[ˈkemɪsts]" },
+    { en: "record shop", ru: "музыкальный магазин", tr: "[ˈrekɔ:d ʃɒp]" },
+    { en: "fast food restaurant", ru: "ресторан быстрой еды", tr: "[fɑ:st fu:d ˈrestrɒnt]" },
+    { en: "clothes shop", ru: "магазин одежды", tr: "[kləʊðz ʃɒp]" },
+    { en: "jeweller's", ru: "ювелирный магазин", tr: "[ˈdʒu:ələz]" },
+    { en: "butcher's", ru: "мясная лавка", tr: "[ˈbʊtʃəz]" }
+  ],
+  "Это было здорово! (5 кл)": [
+    { en: "a zoo", ru: "зоопарк", tr: "[ə zu:]" },
+    { en: "an art gallery", ru: "художественная галерея", tr: "[æn a:t ˈɡælərɪ]" },
+    { en: "a theatre", ru: "театр", tr: "[ə ˈθɪətə]" },
+    { en: "an adventure park", ru: "парк аттракционов", tr: "[æn ədˈventʃə pa:k]" },
+    { en: "a concert hall", ru: "концертный зал", tr: "[ə ˈkɒnsət hɔ:l]" },
+    { en: "choose", ru: "выбирать", tr: "[tʃu:z]" },
+    { en: "queue", ru: "очередь", tr: "[kju:]" },
+    { en: "candyfloss", ru: "сахарная вата", tr: "[ˈkændɪflɒs]" }
+  ],
+  "Не пропусти это! (5 кл)": [
+    { en: "horror", ru: "фильм ужасов", tr: "[ˈhɒrə]" },
+    { en: "comedy", ru: "комедия", tr: "[ˈkɒmədɪ]" },
+    { en: "animated", ru: "анимационный", tr: "[ˈænɪmeɪtɪd]" },
+    { en: "romance", ru: "романс", tr: "[rəʊˈmæns]" },
+    { en: "action", ru: "боевик", tr: "[ˈækʃn]" },
+    { en: "fantasy", ru: "фантастика", tr: "[ˈfæntəzɪ]" }
+  ],
+  "Путешествие и отдых (5 кл)": [
+    { en: "beach holiday", ru: "пляжные каникулы", tr: "[bi:tʃ ˈhɒlədeɪ]" },
+    { en: "cruise", ru: "круиз", tr: "[kru:z]" },
+    { en: "safari", ru: "сафари", tr: "[səˈfɑ:rɪ]" },
+    { en: "sightseeing tour", ru: "тур по достопримечательностям", tr: "[ˈsaɪtsi:ɪŋ tʊə]" },
+    { en: "activity holiday", ru: "активные каникулы", tr: "[ækˈtɪvətɪ ˈhɒlədeɪ]" }
+  ],
+  "Как ты любишь путешествовать? (5 кл)": [
+    { en: "by coach", ru: "междугородним автобусом", tr: "[baɪ kəʊtʃ]" },
+    { en: "by motorbike", ru: "мотоциклом", tr: "[baɪ ˈməʊtəbaɪk]" },
+    { en: "by train", ru: "поездом", tr: "[baɪ treɪn]" },
+    { en: "by car", ru: "машиной", tr: "[baɪ ka:]" },
+    { en: "by ship", ru: "кораблём", tr: "[baɪ ʃɪp]" },
+    { en: "by bike", ru: "велосипедом", tr: "[baɪ baɪk]" },
+    { en: "by plane", ru: "самолётом", tr: "[baɪ pleɪn]" },
+    { en: "by air", ru: "воздухом", tr: "[baɪ eə]" },
+    { en: "on foot", ru: "пешком", tr: "[ɒn fʊt]" }
+  ],
+  "Летние каникулы (5 кл)": [
+    { en: "hiking", ru: "пешеходный туризм", tr: "[ˈhaɪkɪŋ]" },
+    { en: "sunbathing", ru: "принятие солнечных ванн", tr: "[ˈsʌnba:θɪŋ]" },
+    { en: "swimming", ru: "плавание", tr: "[ˈswɪmɪŋ]" },
+    { en: "fishing", ru: "рыбалка", tr: "[ˈfɪʃɪŋ]" },
+    { en: "windsurfing", ru: "виндсёрфинг", tr: "[ˈwɪndsɜ:fɪŋ]" },
+    { en: "jet skiing", ru: "катание на водном мотоцикле", tr: "[dʒet ˈski:ɪŋ]" },
+    { en: "white water rafting", ru: "сплав на плотах", tr: "[waɪt ˈwɔ:tə ˈra:ftɪŋ]" },
+    { en: "scuba diving", ru: "подводное плавание (с аквалангом)", tr: "[ˈsku:bə ˈdaɪvɪŋ]" }
+  ],
+  "Какие бывают занятия? (5 кл)": [
+    { en: "tiring", ru: "утомительный", tr: "[ˈtaɪərɪŋ]" },
+    { en: "relaxing", ru: "расслабляющий", tr: "[rɪˈlæksɪŋ]" },
+    { en: "boring", ru: "скучный", tr: "[ˈbɔ:rɪŋ]" },
+    { en: "exciting", ru: "волнующий", tr: "[ɪkˈsaɪtɪŋ]" },
+    { en: "fun", ru: "забавный", tr: "[fʌn]" },
+    { en: "dangerous", ru: "опасный", tr: "[ˈdeɪndʒərəs]" },
+    { en: "enjoyable", ru: "приятный", tr: "[ɪnˈdʒɔɪəbl]" }
+  ],
+  "Просто записка (5 кл)": [
+    { en: "toothache", ru: "зубная боль", tr: "[ˈtu:θeɪk]" },
+    { en: "stomachache", ru: "боль в животе", tr: "[ˈstʌməkeɪk]" },
+    { en: "a headache", ru: "головная боль", tr: "[ə ˈhedeɪk]" },
+    { en: "a temperature", ru: "температура", tr: "[ə ˈtemprətʃə]" },
+    { en: "a sunburn", ru: "солнечный ожог", tr: "[ə ˈsʌnbɜ:n]" },
+    { en: "see a doctor", ru: "посетить доктора", tr: "[si: ə ˈdɒktə]" },
+    { en: "see a dentist", ru: "посетить дантиста", tr: "[si: ə ˈdentɪst]" },
+    { en: "take an aspirin", ru: "принять аспирин", tr: "[teɪk ən ˈæsprɪn]" },
+    { en: "put lotion on", ru: "нанести лосьон", tr: "[pʊt ˈləʊʃn ɒn]" }
   ]
 };
 
